@@ -1,0 +1,120 @@
+-------------------------------------------- port-channel
+-------- SW8
+conf t
+
+int range f1/0 -1
+channel-group 1 mode on
+exit
+
+int range f1/4 -5
+channel-group 3 mode on
+exit
+
+end
+------------ 
+-------- SW9
+conf t
+
+int range f1/0 -1
+channel-group 1 mode on
+exit
+
+int range f1/2 -3
+channel-group 2 mode on
+exit
+
+end
+------------ 
+-------- SW10
+conf t
+
+int range f1/2 -3
+channel-group 2 mode on
+exit
+
+int range f1/4 -5
+channel-group 3 mode on
+exit
+
+end
+-------------------------------------------- TRONCALES
+-------- SW8
+conf t
+
+int Po1
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30,1002-1005
+exit
+
+int Po3
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30,1002-1005
+exit
+
+end
+------------ 
+-------- SW9
+conf t
+
+int Po1
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30,1002-1005
+exit
+
+int Po2
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30,1002-1005
+exit
+
+end
+------------ 
+-------- SW10
+conf t
+
+int Po2
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30,1002-1005
+exit
+
+int Po3
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30,1002-1005
+exit
+
+end
+-------------------------------------------- VTP
+-------- SW8
+conf t
+
+vtp domain grupo26
+vtp password grupo26
+vtp mode client
+
+end
+------------ 
+-------- SW9
+conf t
+
+vtp domain grupo26
+vtp password grupo26
+vtp mode client
+
+end
+------------ 
+-------- SW10
+conf t
+
+vtp domain grupo26
+vtp password grupo26
+vtp mode client
+
+end
+-------------------------------------------- CLOUDs
+conf
+int fa1/#
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30,1002-1005
+exit
+
+-------------------------------------------- SAVE
+copy running-config startup-config
