@@ -2,32 +2,35 @@
 -------- SW1
 conf t
 
-int range f1/0-1
+int range f1/0 -1
 channel-group 1 mode on
 exit
 
-int range f1/2-4
+int range f1/2 -4
 channel-group 2 mode on
 exit
 
-int range f1/5-7
+int range f1/5 -7
 channel-group 3 mode on
 exit
+
+show etherchannel port-channel
+show etherchannel summary
 
 end
 ------------ 
 -------- SW2
 conf t
 
-int range f1/0-1
+int range f1/0 -1
 channel-group 1 mode on
 exit
 
-int range f1/5-7
+int range f1/5 -7
 channel-group 4 mode on
 exit
 
-int range f1/2-4
+int range f1/2 -4
 channel-group 5 mode on
 exit
 
@@ -36,11 +39,11 @@ end
 -------- SW3
 conf t
 
-int range f1/2-4
+int range f1/2 -4
 channel-group 2 mode on
 exit
 
-int range f1/5-7
+int range f1/5 -7
 channel-group 4 mode on
 exit
 
@@ -49,11 +52,11 @@ end
 -------- SW4
 conf t
 
-int range f1/5-7
+int range f1/5 -7
 channel-group 3 mode on
 exit
 
-int range f1/2-4
+int range f1/2 -4
 channel-group 5 mode on
 exit
 
@@ -111,43 +114,47 @@ name VENTAS-INFORMATICA
 exit
 
 end
+
+show vlan-sw
 -------------------------------------------- TRONCALES
 -------- SW1
 conf t
 
 int Po1
 switchport mode trunk
-switchport trunk allowed vlan 1,10,20,30
+switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
 
 int Po2
 switchport mode trunk
-switchport trunk allowed vlan 1,10,20,30
+switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
 
 int Po3
 switchport mode trunk
-switchport trunk allowed vlan 1,10,20,30
+switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
 
 end
+
+show interfaces trunk
 ------------ 
 -------- SW2
 conf t
 
 int Po1
 switchport mode trunk
-switchport trunk allowed vlan 1,10,20,30
+switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
 
 int Po4
 switchport mode trunk
-switchport trunk allowed vlan 1,10,20,30
+switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
 
 int Po5
 switchport mode trunk
-switchport trunk allowed vlan 1,10,20,30
+switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
 
 end
@@ -157,12 +164,12 @@ conf t
 
 int Po2
 switchport mode trunk
-switchport trunk allowed vlan 1,10,20,30
+switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
 
 int Po4
 switchport mode trunk
-switchport trunk allowed vlan 1,10,20,30
+switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
 
 end
@@ -172,21 +179,31 @@ conf t
 
 int Po3
 switchport mode trunk
-switchport trunk allowed vlan 1,10,20,30
+switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
 
 int Po5
 switchport mode trunk
-switchport trunk allowed vlan 1,10,20,30
+switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
 
 end
--------------------------------------------- TRONCALES
+-------------------------------------------- STP
 -------- SW1
 conf t
-spaning-tree vlan 10 root primary
-spaning-tree vlan 20 root primary
-spaning-tree vlan 30 root primary
+spanning-tree vlan 10 root primary
+spanning-tree vlan 20 root primary
+spanning-tree vlan 30 root primary
 end
 
 sh spanning-tree root
+
+-------------------------------------------- CLOUDs
+conf
+int fa1/#
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30,1002-1005
+exit
+
+-------------------------------------------- SAVE
+copy running-config startup-config
