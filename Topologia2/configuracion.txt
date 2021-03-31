@@ -1,0 +1,192 @@
+-------------------------------------------- port-channel
+-------- SW1
+conf t
+
+int range f1/0-1
+channel-group 1 mode on
+exit
+
+int range f1/2-4
+channel-group 2 mode on
+exit
+
+int range f1/5-7
+channel-group 3 mode on
+exit
+
+end
+------------ 
+-------- SW2
+conf t
+
+int range f1/0-1
+channel-group 1 mode on
+exit
+
+int range f1/5-7
+channel-group 4 mode on
+exit
+
+int range f1/2-4
+channel-group 5 mode on
+exit
+
+end
+------------ 
+-------- SW3
+conf t
+
+int range f1/2-4
+channel-group 2 mode on
+exit
+
+int range f1/5-7
+channel-group 4 mode on
+exit
+
+end
+------------ 
+-------- SW4
+conf t
+
+int range f1/5-7
+channel-group 3 mode on
+exit
+
+int range f1/2-4
+channel-group 5 mode on
+exit
+
+end
+-------------------------------------------- VTP
+-------- SW1
+conf t
+
+vtp domain grupo26
+vtp password grupo26
+vtp mode server
+
+end
+------------ 
+-------- SW2
+conf t
+
+vtp domain grupo26
+vtp password grupo26
+vtp mode client
+
+end
+------------ 
+-------- SW3
+conf t
+
+vtp domain grupo26
+vtp password grupo26
+vtp mode client
+
+end
+------------ 
+-------- SW4
+conf t
+
+vtp domain grupo26
+vtp password grupo26
+vtp mode client
+
+end
+-------------------------------------------- VLAN
+-------- SW1
+conf t 
+
+vlan 10
+name ADMINISTRACION
+exit
+
+vlan 20
+name CONTABILIDAD
+exit
+
+vlan 30
+name VENTAS-INFORMATICA
+exit
+
+end
+-------------------------------------------- TRONCALES
+-------- SW1
+conf t
+
+int Po1
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30
+exit
+
+int Po2
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30
+exit
+
+int Po3
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30
+exit
+
+end
+------------ 
+-------- SW2
+conf t
+
+int Po1
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30
+exit
+
+int Po4
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30
+exit
+
+int Po5
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30
+exit
+
+end
+------------ 
+-------- SW3
+conf t
+
+int Po2
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30
+exit
+
+int Po4
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30
+exit
+
+end
+------------ 
+-------- SW4
+conf t
+
+int Po3
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30
+exit
+
+int Po5
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30
+exit
+
+end
+-------------------------------------------- TRONCALES
+-------- SW1
+conf t
+spaning-tree vlan 10 root primary
+spaning-tree vlan 20 root primary
+spaning-tree vlan 30 root primary
+end
+
+sh spanning-tree root

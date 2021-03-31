@@ -10,7 +10,7 @@
     "scene_height": 1000,
     "scene_width": 2000,
     "show_grid": true,
-    "show_interface_labels": false,
+    "show_interface_labels": true,
     "show_layers": false,
     "snap_to_grid": true,
     "supplier": null,
@@ -28,8 +28,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/0",
-                            "x": 65,
-                            "y": 23
+                            "x": 75,
+                            "y": -7
                         },
                         "node_id": "5b26b2e4-e3aa-4ab6-b539-d4c4ce02b5ab",
                         "port_number": 0
@@ -40,8 +40,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/0",
-                            "x": -14,
-                            "y": 23
+                            "x": -62,
+                            "y": -6
                         },
                         "node_id": "4cb26b16-63d5-4008-ab11-7c6110e8f69c",
                         "port_number": 0
@@ -59,8 +59,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/1",
-                            "x": 65,
-                            "y": 18
+                            "x": 76,
+                            "y": 25
                         },
                         "node_id": "5b26b2e4-e3aa-4ab6-b539-d4c4ce02b5ab",
                         "port_number": 1
@@ -71,8 +71,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/1",
-                            "x": -14,
-                            "y": 18
+                            "x": -61,
+                            "y": 24
                         },
                         "node_id": "4cb26b16-63d5-4008-ab11-7c6110e8f69c",
                         "port_number": 1
@@ -90,8 +90,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/2",
-                            "x": 53,
-                            "y": -4
+                            "x": -87,
+                            "y": -51
                         },
                         "node_id": "5b26b2e4-e3aa-4ab6-b539-d4c4ce02b5ab",
                         "port_number": 2
@@ -102,8 +102,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/2",
-                            "x": -2,
-                            "y": 51
+                            "x": -162,
+                            "y": 22
                         },
                         "node_id": "ee7b7c74-11d9-4374-9f6a-d8e2cfc49922",
                         "port_number": 2
@@ -121,8 +121,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/3",
-                            "x": 50,
-                            "y": -8
+                            "x": -38,
+                            "y": -52
                         },
                         "node_id": "5b26b2e4-e3aa-4ab6-b539-d4c4ce02b5ab",
                         "port_number": 3
@@ -133,8 +133,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/3",
-                            "x": -6,
-                            "y": 48
+                            "x": -113,
+                            "y": 24
                         },
                         "node_id": "ee7b7c74-11d9-4374-9f6a-d8e2cfc49922",
                         "port_number": 3
@@ -152,8 +152,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/4",
-                            "x": 57,
-                            "y": -1
+                            "x": 12,
+                            "y": -51
                         },
                         "node_id": "5b26b2e4-e3aa-4ab6-b539-d4c4ce02b5ab",
                         "port_number": 4
@@ -164,8 +164,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/4",
-                            "x": 0,
-                            "y": 55
+                            "x": -63,
+                            "y": 23
                         },
                         "node_id": "ee7b7c74-11d9-4374-9f6a-d8e2cfc49922",
                         "port_number": 4
@@ -183,8 +183,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/5",
-                            "x": -2,
-                            "y": -4
+                            "x": 2,
+                            "y": -51
                         },
                         "node_id": "4cb26b16-63d5-4008-ab11-7c6110e8f69c",
                         "port_number": 5
@@ -195,8 +195,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/5",
-                            "x": 53,
-                            "y": 51
+                            "x": 76,
+                            "y": 24
                         },
                         "node_id": "ee7b7c74-11d9-4374-9f6a-d8e2cfc49922",
                         "port_number": 5
@@ -214,8 +214,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/6",
-                            "x": -6,
-                            "y": -1
+                            "x": 53,
+                            "y": -52
                         },
                         "node_id": "4cb26b16-63d5-4008-ab11-7c6110e8f69c",
                         "port_number": 6
@@ -226,8 +226,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/6",
-                            "x": 50,
-                            "y": 55
+                            "x": 126,
+                            "y": 23
                         },
                         "node_id": "ee7b7c74-11d9-4374-9f6a-d8e2cfc49922",
                         "port_number": 6
@@ -245,8 +245,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/7",
-                            "x": 0,
-                            "y": -8
+                            "x": 101,
+                            "y": -52
                         },
                         "node_id": "4cb26b16-63d5-4008-ab11-7c6110e8f69c",
                         "port_number": 7
@@ -257,8 +257,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/7",
-                            "x": 57,
-                            "y": 48
+                            "x": 177,
+                            "y": 24
                         },
                         "node_id": "ee7b7c74-11d9-4374-9f6a-d8e2cfc49922",
                         "port_number": 7
@@ -276,7 +276,7 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/5",
-                            "x": 53,
+                            "x": -113,
                             "y": 51
                         },
                         "node_id": "5b26b2e4-e3aa-4ab6-b539-d4c4ce02b5ab",
@@ -288,8 +288,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/5",
-                            "x": -2,
-                            "y": -4
+                            "x": -163,
+                            "y": 1
                         },
                         "node_id": "0c6f9351-0415-4437-b7d0-b84c310a263f",
                         "port_number": 5
@@ -307,8 +307,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/6",
-                            "x": 57,
-                            "y": 48
+                            "x": -62,
+                            "y": 49
                         },
                         "node_id": "5b26b2e4-e3aa-4ab6-b539-d4c4ce02b5ab",
                         "port_number": 6
@@ -319,8 +319,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/6",
-                            "x": 0,
-                            "y": -8
+                            "x": -112,
+                            "y": 0
                         },
                         "node_id": "0c6f9351-0415-4437-b7d0-b84c310a263f",
                         "port_number": 6
@@ -338,8 +338,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/7",
-                            "x": 50,
-                            "y": 55
+                            "x": -12,
+                            "y": 49
                         },
                         "node_id": "5b26b2e4-e3aa-4ab6-b539-d4c4ce02b5ab",
                         "port_number": 7
@@ -350,8 +350,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/7",
-                            "x": -6,
-                            "y": -1
+                            "x": -63,
+                            "y": 0
                         },
                         "node_id": "0c6f9351-0415-4437-b7d0-b84c310a263f",
                         "port_number": 7
@@ -369,8 +369,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/2",
-                            "x": -2,
-                            "y": 51
+                            "x": 26,
+                            "y": 49
                         },
                         "node_id": "4cb26b16-63d5-4008-ab11-7c6110e8f69c",
                         "port_number": 2
@@ -381,8 +381,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/2",
-                            "x": 53,
-                            "y": -4
+                            "x": 75,
+                            "y": -1
                         },
                         "node_id": "0c6f9351-0415-4437-b7d0-b84c310a263f",
                         "port_number": 2
@@ -400,8 +400,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/3",
-                            "x": 0,
-                            "y": 55
+                            "x": 77,
+                            "y": 49
                         },
                         "node_id": "4cb26b16-63d5-4008-ab11-7c6110e8f69c",
                         "port_number": 3
@@ -412,7 +412,7 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/3",
-                            "x": 57,
+                            "x": 126,
                             "y": -1
                         },
                         "node_id": "0c6f9351-0415-4437-b7d0-b84c310a263f",
@@ -431,8 +431,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/4",
-                            "x": -6,
-                            "y": 48
+                            "x": 126,
+                            "y": 49
                         },
                         "node_id": "4cb26b16-63d5-4008-ab11-7c6110e8f69c",
                         "port_number": 4
@@ -443,8 +443,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/4",
-                            "x": 50,
-                            "y": -8
+                            "x": 175,
+                            "y": 0
                         },
                         "node_id": "0c6f9351-0415-4437-b7d0-b84c310a263f",
                         "port_number": 4
@@ -456,7 +456,7 @@
         "nodes": [
             {
                 "compute_id": "local",
-                "console": 5000,
+                "console": 5007,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -513,7 +513,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5001,
+                "console": 5008,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -570,7 +570,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5002,
+                "console": 5009,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -627,7 +627,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5003,
+                "console": 5010,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
