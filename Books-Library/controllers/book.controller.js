@@ -2,15 +2,18 @@ const bookModel = require('../models/book.model');
 
 const bookController = {
     create: (req, res) => {
-        bookModel.create(req.body, (err, results) => {
+        let book = {
+            title: req.body.title,
+            description: req.body.description,
+            image: req.file.filename
+        };
+
+        bookModel.create(book, (err, results) => {
             if (err) {
                 res.status(500).send(err);
                 return;
             }
-            res.status(200).send({
-                code: '200',
-                data: results
-            });
+            res.status(200).redirect('/');
         });
     },
 

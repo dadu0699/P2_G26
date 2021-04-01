@@ -1,14 +1,12 @@
 <%- include('templates/header'); %>
 
 <div class="wrapper">
-
     <h2><strong>Todos los libros<span>( <%= books.length %> )</span></strong></h2>
-
     <div class="cards">
 
         <% books.forEach(book => { %>
         <figure class="card">
-            <img src="<%= book.image %>" />
+            <img src="/uploads/<%= book.image %>" />
             <figcaption><%= book.title %></figcaption>
         </figure>
         <% }) %>
@@ -16,12 +14,11 @@
     </div>
 
     <h2><strong>Novedad</strong></h2>
-
     <div class="news">
 
         <% latestBooks.reverse().forEach(book => { %>
         <figure class="article">
-            <img src="<%= book.image %>" />
+            <img src="/uploads/<%= book.image %>" />
             <figcaption>
                 <h3><%= book.title %></h3>
                 <p><%= book.description %></p>
