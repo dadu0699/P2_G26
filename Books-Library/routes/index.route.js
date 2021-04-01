@@ -9,4 +9,12 @@ router.get('/', (req, res) => {
     );
 });
 
+router.get('/book', (req, res) => {
+    res.render(
+        'book', {
+            title: 'titulo'
+        }
+    );
+});
+
 module.exports = router;
