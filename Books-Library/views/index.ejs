@@ -2,14 +2,16 @@
 
 <div class="wrapper">
 
-    <h2><strong>Todos los libros<span>( 4 )</span></strong></h2>
+    <h2><strong>Todos los libros<span>( <%= books.length %> )</span></strong></h2>
 
     <div class="cards">
 
+        <% books.forEach(book => { %>
         <figure class="card">
-            <img src="https://i.pinimg.com/originals/10/7e/dc/107edc3ef3d815cbc68f248bdcb430a5.jpg" />
-            <figcaption>title</figcaption>
+            <img src="<%= book.image %>" />
+            <figcaption><%= book.title %></figcaption>
         </figure>
+        <% }) %>
 
     </div>
 
@@ -17,16 +19,15 @@
 
     <div class="news">
 
+        <% latestBooks.reverse().forEach(book => { %>
         <figure class="article">
-            <img src="https://i.pinimg.com/originals/10/7e/dc/107edc3ef3d815cbc68f248bdcb430a5.jpg" />
+            <img src="<%= book.image %>" />
             <figcaption>
-                <h3>New Item</h3>
-                <p>
-                    Eiusmod Lorem elit labore laborum do aliquip culpa eu anim ea occaecat. Dolor pariatur deserunt nisi
-                    labore non mollit. Irure officia ex aliquip sint eiusmod occaecat.
-                </p>
+                <h3><%= book.title %></h3>
+                <p><%= book.description %></p>
             </figcaption>
         </figure>
+        <% }) %>
 
     </div>
 </div>

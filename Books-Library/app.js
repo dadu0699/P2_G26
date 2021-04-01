@@ -3,14 +3,13 @@ const morgan = require('morgan');
 const cors = require('cors');
 const path = require('path');
 
-const indexRouter = require('./routes/index.route');
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // View engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
 
 // Middlewares
 app.use(morgan('dev'));
@@ -24,15 +23,17 @@ app.use(express.urlencoded({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Routes 
-app.use('/', indexRouter);
 
+// Routes 
+app.use('/', require('./routes/index.route'));
 app.use('/uploads', express.static(path.resolve('uploads')));
+
 
 // Port assignment
 app.listen(PORT, () => {
     console.log(`App listening on port ${ PORT }`);
 });
+
 
 // Catch 404
 app.use((req, res, next) => {

@@ -1,13 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.render(
-        'index', {
-            title: 'titulo'
-        }
-    );
-});
+const bookController = require('../controllers/book.controller');
+
+router.route('/').get(bookController.get);
 
 router.get('/book', (req, res) => {
     res.render(

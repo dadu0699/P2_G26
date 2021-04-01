@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS BooksLibrary;
+CREATE DATABASE BooksLibrary;
+USE BooksLibrary;
+
+CREATE TABLE Book (
+  id INT NOT NULL AUTO_INCREMENT,
+  title VARCHAR(100) NOT NULL,
+  description TEXT NOT NULL,
+  image TEXT,
+  PRIMARY KEY (id)
+);
