@@ -200,7 +200,7 @@ sh spanning-tree root
 
 -------------------------------------------- CLOUDs
 conf
-int fa1/#
+int fa1/15
 switchport mode trunk
 switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
