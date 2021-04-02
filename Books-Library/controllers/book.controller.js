@@ -13,7 +13,10 @@ const bookController = {
                 res.status(500).send(err);
                 return;
             }
-            res.status(200).redirect('/');
+            res.status(200).send({
+                code: '200',
+                data: results
+            });
         });
     },
 
@@ -23,13 +26,10 @@ const bookController = {
                 res.status(500).send(err);
                 return;
             }
-
-            res.status(200).render(
-                'index', {
-                    books: results,
-                    latestBooks: results
-                }
-            );
+            res.status(200).send({
+                code: '200',
+                data: results
+            });
         });
     }
 };
