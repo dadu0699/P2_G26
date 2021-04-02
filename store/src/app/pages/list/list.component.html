@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <h2><strong>Todos los libros<span>( {{books.length}} )</span></strong></h2>
+  <div class="cards">
+
+    <ng-template ngFor let-book [ngForOf]="books">
+      <figure class="card">
+        <img [src]="url + 'uploads/' + book.image">
+        <figcaption>{{ book.title }}</figcaption>
+      </figure>
+    </ng-template>
+
+  </div>
+
+  <h2><strong>Novedad</strong></h2>
+  <div class="news">
+
+    <ng-template ngFor let-book [ngForOf]="books">
+      <figure class="article">
+        <img [src]="url + 'uploads/' + book.image">
+        <figcaption>
+          <h3>{{ book.title }}</h3>
+          <p>{{ book.description }}</p>
+        </figcaption>
+      </figure>
+    </ng-template>
+
+  </div>
+</div>
