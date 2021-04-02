@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { Global } from 'src/app/services/global';
+import { Global } from 'src/app/services/Global';
 import { Book } from 'src/app/models/book';
 
 @Injectable({

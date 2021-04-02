@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Global } from 'src/app/services/global';
+import { Global } from 'src/app/services/Global';
 import { Book } from 'src/app/models/book';
 import { BooksService } from 'src/app/services/books.service';
 
