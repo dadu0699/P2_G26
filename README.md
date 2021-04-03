@@ -31,7 +31,7 @@
 
 ## **Topología 1**<a name="idTopo1"></a>
 <div align="center">
-    <img src="./assets/images/topologias/1.png" width="400">
+    <img src="./assets/images/topologias/1.PNG" width="400">
     <p align="center">Diseño Topología 1</p>
 </div>
 
@@ -157,24 +157,24 @@ copy running-config startup-config
 ```
 ## Servidor Informatica
 <div align="center">
-    <img src="./assets/images/server/2.png" width="400">
+    <img src="./assets/images/server/2.PNG" width="400">
     <p align="center">Terminal Server Backend</p>
 </div>
 
 ## Servidor Ventas
 <div align="center">
-    <img src="./assets/images/server/3.png" width="400">
+    <img src="./assets/images/server/3.PNG" width="400">
     <p align="center">Terminal Server Frontend</p>
 </div>
 
 <div align="center">
-    <img src="./assets/images/server/1.png" width="400">
+    <img src="./assets/images/server/1.PNG" width="400">
     <p align="center">Pagina Web</p>
 </div>
 
 ## **Topología 2**<a name="idTopo2"></a>
 <div align="center">
-    <img src="./assets/images/topologias/2.png" width="400">
+    <img src="./assets/images/topologias/2.PNG" width="400">
     <p align="center">Diseño Topología 2</p>
 </div>
 
@@ -388,7 +388,7 @@ copy running-config startup-config
 
 ## **Topología 3**<a name="idTopo3"></a>
 <div align="center">
-    <img src="./assets/images/topologias/3.png" width="400">
+    <img src="./assets/images/topologias/3.PNG" width="400">
     <p align="center">Diseño Topología 3</p>
 </div>
 
