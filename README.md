@@ -568,7 +568,7 @@ copy running-config startup-config
 ## **Configuración VPN**<a name="idVPN"></a>
 ### Google Cloud Platform 
 
-Para la creacion de nuestro servidor VPN se utilizo una máquina virtual en Google Cloud. 
+Para la creación de nuestro servidor VPN se utilizo una máquina virtual en Google Cloud. 
 
 * Creamos un regla de Firewall para nuestro proyecto. 
 
