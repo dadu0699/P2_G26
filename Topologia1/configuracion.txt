@@ -66,6 +66,11 @@ switchport mode trunk
 switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
 
+int fa1/15
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30,1002-1005
+exit
+
 end
 ------------ 
 -------- SW10
@@ -109,12 +114,5 @@ vtp password grupo26
 vtp mode client
 
 end
--------------------------------------------- CLOUDs
-conf
-int fa1/#
-switchport mode trunk
-switchport trunk allowed vlan 1,10,20,30,1002-1005
-exit
-
 -------------------------------------------- SAVE
 copy running-config startup-config
