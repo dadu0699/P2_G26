@@ -519,11 +519,6 @@ switchport mode trunk
 switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
 
-int fa1/6
-switchport mode access
-switchport access vlan 20
-exit
-
 end
 -------------------------------------------- VTP
 -------- SW5
