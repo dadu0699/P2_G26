@@ -89,6 +89,11 @@ switchport mode trunk
 switchport trunk allowed vlan 1,10,20,30,1002-1005
 exit
 
+int fa1/6
+switchport mode access
+switchport access vlan 10
+exit
+
 end
 ------------ 
 -------- SW9
@@ -137,6 +142,11 @@ exit
 int Po3
 switchport mode trunk
 switchport trunk allowed vlan 1,10,20,30,1002-1005
+exit
+
+int fa1/6
+switchport mode access
+switchport access vlan 10
 exit
 
 end
