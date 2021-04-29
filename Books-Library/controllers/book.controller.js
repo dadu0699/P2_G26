@@ -31,6 +31,18 @@ const bookController = {
                 data: results
             });
         });
+    },
+    getLast: (req, res) => {
+        bookModel.getLast((err, results) => {
+            if (err) {
+                res.status(500).send(err);
+                return;
+            }
+            res.status(200).send({
+                code: '200',
+                data: results
+            });
+        });
     }
 };
 

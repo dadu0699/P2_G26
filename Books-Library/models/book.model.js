@@ -19,6 +19,11 @@ const book = {
     getAll(callback) {
         const query = 'SELECT * FROM Book;';
         return this.executeQuery(query, callback);
+    },
+
+    getLast(callback) {
+        const query = 'SELECT * FROM Book ORDER BY id DESC LIMIT 4;';
+        return this.executeQuery(query, callback);
     }
 };
 
