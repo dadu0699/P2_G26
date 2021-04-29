@@ -18,6 +18,10 @@ export class BooksService {
     return await this._httpClient.get(`${this.url}`).toPromise();
   }
 
+  public async getRecent(): Promise<any> {
+    return await this._httpClient.get(`${this.url}/recent-books`).toPromise();
+  }
+
   public async create(book: Book, photo: File): Promise<any> {
     const formData = new FormData();
     formData.append('title', book.title.toString());

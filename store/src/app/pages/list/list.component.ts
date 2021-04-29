@@ -12,12 +12,14 @@ import { BooksService } from 'src/app/services/books.service';
 export class ListComponent implements OnInit {
   public url: string;
   public books: Book[];
+  public recentBooks: Book[];
 
   constructor(
     private _booksService: BooksService
   ) {
     this.url = `${Global.url}/`;
     this.books = [];
+    this.recentBooks = [];
   }
 
   async ngOnInit(): Promise<void> {
@@ -26,10 +28,16 @@ export class ListComponent implements OnInit {
 
   private async getData(): Promise<void> {
     try {
-      const data = await this._booksService.getAll();
+      let data = await this._booksService.getAll();
       if (data['code'] === '200') {
         this.books = data['data'];
       }
+
+      data = await this._booksService.getRecent();
+      if (data['code'] === '200') {
+        this.recentBooks = data['data'];
+      }
+   
     } catch (err) {
       console.log(<any>err);
     }
